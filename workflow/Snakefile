@@ -33,5 +33,5 @@ onerror:
 # -----------------------------------------------------
 rule all:
     input:
-        "results/multiqc/multiqc_report.html",
+        "results/gds.gds",
     default_target: True
