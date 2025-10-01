@@ -6,13 +6,17 @@
 
 # load configuration
 # -----------------------------------------------------
-configfile: "config/config.yaml"
+# configfile: "config/config.yaml"
 
 
 # load rules
 # -----------------------------------------------------
-include: "rules/common.smk"
-include: "rules/process_reads.smk"
+# include: "rules/common.smk"
+include: "rules/convert_to_gds.smk"
+
+# Default container. Overriden for non-GENESIS functions and other software.
+container: "docker://broome:genesis:stable"
+
 
 
 # optional messages, log and error handling
