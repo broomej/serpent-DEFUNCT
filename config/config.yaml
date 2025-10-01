@@ -1,0 +1,6 @@
+plink_to_gds:
+    storage_option: "LZMA_RA"
+    major.ref: True
+    optimize: True
+    digest: True
+    verbose: True
