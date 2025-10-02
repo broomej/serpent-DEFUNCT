@@ -1,6 +1,9 @@
 plink_to_gds:
-    storage_option: "LZMA_RA"
-    major.ref: True
+    compress.geno: "LZMA_RA"
+    compress.annotation: "LZMA_RA"
+    chr.conv: True
+    include.pheno: True
     optimize: True
     digest: True
+    parallel: True
     verbose: True
