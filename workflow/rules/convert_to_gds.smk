@@ -4,6 +4,6 @@ rule plink_to_gds:
         bim_fn=".test/resources/toy.bim",
         fam_fn=".test/resources/toy.fam",
     output:
-        out_gdsfn="results/gds.gds"
-    params: lookup(within=config, dpath="plink_to_gds"),
+        out_gdsfn=lookup(within=config, dpath="output/gdsfn"),
+    params: config["plink_to_gds"],
     script: "../scripts/plink_to_gds.R"

@@ -36,6 +36,5 @@ onerror:
 # target rules
 # -----------------------------------------------------
 rule all:
-    input:
-        "results/gds.gds",
+    input: lookup(within=config, dpath="output/gdsfn"),
     default_target: True

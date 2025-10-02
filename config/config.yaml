@@ -7,3 +7,6 @@ plink_to_gds:
     digest: True
     parallel: True
     verbose: True
+
+output:
+    gdsfn: "results/toy.gds"
