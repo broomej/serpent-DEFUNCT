@@ -15,7 +15,7 @@ configfile: "config/config.yaml"
 include: "rules/convert_to_gds.smk"
 
 # Default container. Overriden for non-GENESIS functions and other software.
-container: "docker://broome:genesis:stable"
+container: "docker://broome/genesis:stable"
 
 
 
